@@ -1,0 +1,8 @@
+{
+    "scripts": {
+      "test": "testcafe chrome:headless tests/**/*"
+    },
+    "devDependencies": {
+        "testcafe": "^0.18.4"
+    }
+}
