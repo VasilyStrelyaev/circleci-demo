@@ -1,7 +1,12 @@
 import Page from './page-model';
 
 fixture `A set of examples that illustrate how to use TestCafe API`
-    .page `https://devexpress.github.io/testcafe/example/`;
+    .page `https://devexpress.github.io/testcafe/example/`
+    .beforeEach(
+        async t => {
+           await t.maximizeWindow();
+        }
+    );
 
 // Page model
 const page = new Page();
